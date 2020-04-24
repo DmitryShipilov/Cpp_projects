@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <string>
@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	SOCKET clientSocket;  // сокет для приема и передачи
+	SOCKET clientSocket;  // СЃРѕРєРµС‚ РґР»СЏ РїСЂРёРµРјР° Рё РїРµСЂРµРґР°С‡Рё
 
 	// Create a SOCKET for connecting to server
 	clientSocket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	sockaddr_in serverAddr;  // это будет адрес сервера и клиентов
+	sockaddr_in serverAddr;  // СЌС‚Рѕ Р±СѓРґРµС‚ Р°РґСЂРµСЃ СЃРµСЂРІРµСЂР° Рё РєР»РёРµРЅС‚РѕРІ
 
 	serverAddr.sin_family = AF_INET;
 	serverAddr.sin_port = htons(port);

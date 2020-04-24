@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <string>
@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
 		{
 			std::cout << "Received query: " << std::string(buf, 0, bytesReceived) << std::endl;
 			
-			// îòïðàâëÿåì ðåçóëüòàò íà êëèåíòó
+			// Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð½Ð° ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñƒ
 			sendto(listening, buf, bytesReceived, 0, (sockaddr *)&client, sizeof(client));
 			std::cout << "Sent answer " << std::string(buf, 0, bytesReceived) << std::endl;
 		}
